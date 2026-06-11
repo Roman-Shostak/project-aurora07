@@ -46,6 +46,7 @@ body {
   line-height: 1.5;
   color: var(--white);
   background-color: var(--japanese-laurel-lightest);
+  transition: color var(--anim);
 }
 
 main {
