@@ -1,13 +1,12 @@
 .is-mission {
-  /* background-color: var(--color-japanese-laurel-light); */
-    background-color: rgb(94, 138, 77);
+    background-color: var(--japanese-laurel-light);
 }
 
 .mission-description-list {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
-  color: white;
+  color: var(--white);
   margin-bottom: 32px;
 }
 
