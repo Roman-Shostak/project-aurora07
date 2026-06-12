@@ -1,4 +1,4 @@
-.class {
+/* .class {
 }
 
 @media (min-width: 768px) {
@@ -8,5 +8,60 @@
 
 @media (min-width: 1440px) {
   .class {
+  }
+} */
+.header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 72px;
+  height: 100%;
+  background-color: var(--japanese-laurel-light);
+}
+@media (min-width: 1440px) {
+  .header .container {
+    column-gap: 32px;
+    justify-content: flex-start;
+  }
+}
+.logo {
+  padding: 6px 0px;
+}
+.navigation {
+  margin-left: auto;
+}
+.nav-list {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .nav-list {
+    display: flex;
+    column-gap: 32px;
+  }
+}
+.button {
+  display: none;
+}
+@media (min-width: 768px) {
+  .button {
+    display: block;
+    width: auto;
+    padding: 4px 24px;
+    margin-left: auto;
+    margin-right: 16px;
+  }
+}
+@media (min-width: 1440px) {
+  .button {
+    margin: 0;
+  }
+}
+.burger-open {
+  fill: var(--white);
+}
+@media (min-width: 1440px) {
+  .burger-open {
+    display: none;
   }
 }
