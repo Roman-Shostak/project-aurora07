@@ -33,6 +33,7 @@
   color: var(--neutral-darkest);
 }
 
+/* only for mobilka */
 .btn-to-cart {
   margin-bottom: 16px;
 }
@@ -53,12 +54,26 @@
   margin-top: 16px;
 }
 
+.assorts-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* for tablet */
 @media (min-width: 768px) {
-  .class {
+  .assorts-list {
+    gap: 16px;
   }
 }
 
-@media (min-width: 1440px) {
-  .class {
+.assorts-item {
+  flex-basis: 100%;
+}
+
+/* for tablet */
+@media (min-width: 768px) {
+  .assorts-item {
+    flex-basis: calc((100% - 16px) / 2);
   }
 }
