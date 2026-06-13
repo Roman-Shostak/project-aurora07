@@ -331,4 +331,5 @@ img {
 /* ------------ Logo styles ------------ */
 .logo {
   fill: var(--white);
+  display: block;
 }
