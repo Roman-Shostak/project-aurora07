@@ -90,6 +90,12 @@ img {
   height: auto;
 }
 
+a.button,
+a.button-primary,
+a.button-secondar {
+  display: block;
+}
+
 /* ------------ Layout ------------ */
 
 .section {
@@ -327,4 +333,14 @@ img {
   border: 0;
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
+}
+
+.mobile-hide {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .mobile-hide {
+    display: block;
+  }
 }
