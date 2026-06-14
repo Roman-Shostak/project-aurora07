@@ -12,11 +12,14 @@
 } */
 header {
   background-color: var(--japanese-laurel-light);
+  position: fixed;
+  width: 100%;
 }
 .container.is-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 @media (min-width: 1440px) {
   .container.is-header {
@@ -78,3 +81,78 @@ header {
     height: 24px;
   }
 }
+.burger-menu {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  color: var(--white);
+  background-color: var(--japanese-laurel-light);
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform var(--anim);
+}
+.burger-menu.is-open {
+  transform: translateX(0%);
+}
+@media (min-width: 768px) {
+  .burger-menu {
+    width: 286px;
+    right: 0;
+  }
+  .burger-menu > .container {
+    min-width: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .burger-menu.is-open {
+    display: none;
+  }
+}
+.burger-icon-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 16px;
+}
+@media (min-width: 768px) {
+  .burger-icon-wrapper {
+    justify-content: flex-end;
+    padding: 16px 0 0 0;
+  }
+}
+.icon.is-white {
+  fill: var(--white);
+}
+@media (min-width: 768px) {
+  .hidden-logo {
+    display: none;
+  }
+}
+.burger-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 64px;
+  padding-bottom: 32px;
+  gap: 32px;
+}
+@media (min-width: 768px) {
+  .burger-nav {
+    align-items: flex-end;
+    padding: 24px 0;
+    gap: 24px;
+  }
+}
+/* Можна винести в common */
+.link {
+  transition: opacity var(--anim);
+}
+.link:hover,
+.link:focus {
+  opacity: 0.5;
+}
+.link:active {
+  opacity: 0.6;
+}
+/* Можна винести в common */
