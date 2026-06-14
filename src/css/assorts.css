@@ -7,36 +7,66 @@
   width: 100%;
 }
 
-.text-size-tagline {
+.width-53 {
+  width: 53px;
+}
+
+.height-26 {
+  height: 26px;
+}
+
+.width-344 {
+  max-width: 344px;
+  width: 100%;
+}
+
+@media (min-width: 1440px) {
+  .width-768 {
+    max-width: 768px;
+  }
+}
+
+.is-tag {
   color: var(--neutral-darkest);
   margin-bottom: 16px;
 }
 
-.text-size-lg {
-  color: var(--neutral-darkest);
-  margin-bottom: 24px;
-}
-
-.text-medium-semibold {
+.is-medium {
   color: var(--neutral-darkest);
   margin-top: 16px;
 }
 
-.text-small-normal {
+.is-small {
   color: var(--neutral-darkest);
 }
 
-.text-large-semibold {
+.is-large {
   color: var(--neutral-darkest);
 }
 
-.text-size-custom {
+.is-lg {
+  color: var(--neutral-darkest);
+  margin-bottom: 24px;
+}
+
+.is-custom {
   color: var(--neutral-darkest);
 }
 
-/* only for mobilka */
-.btn-to-cart {
+.image-box {
   margin-bottom: 16px;
+}
+
+.width-344 {
+  width: 344px;
+}
+
+.height-129 {
+  width: 129px;
+}
+
+.width-768 {
+  width: 768px;
 }
 
 .assorts-meta {
@@ -62,7 +92,14 @@
 }
 
 .assorts-item {
+  display: flex;
+  flex-direction: column;
+
   flex-basis: 100%;
+}
+
+.btn-cart {
+  margin-top: auto;
 }
 
 /* for tablet */
