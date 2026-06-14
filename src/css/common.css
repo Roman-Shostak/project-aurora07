@@ -205,6 +205,10 @@ a.button-secondar {
   color: var(--neutral-darkest);
 }
 
+.is-underlined {
+  text-decoration: underline;
+}
+
 /* ------------ Button ------------ */
 
 .button {
