@@ -1,5 +1,5 @@
-<section class="contacts">
-  <div class="container contacts-wrapper">
+<section class="contacts" id="contacts">
+  <div class="container is-contacts">
     <div class="form-field">
       <h3 class="text-size-tagline">Contacts</h3>
       <h2 class="text-size-lg contacts-heading">Get in Touch</h2>
@@ -10,7 +10,7 @@
             <use href="/images/sprite.svg#"></use>
           </svg>
           <a
-            class="contact-info text-regular-medium"
+            class="text-regular-normal is-underlined contact-info"
             href="mailto:hello@organicstore.com"
             >hello@organicstore.com</a
           >
@@ -19,7 +19,9 @@
           <svg class="contacts-icon" width="20" height="20">
             <use href="/images/sprite.svg#"></use>
           </svg>
-          <a class="contact-info text-regular-medium" href="tel:+15553291024"
+          <a
+            class="text-regular-normal is-underlined contact-info"
+            href="tel:+15553291024"
             >+1 (555) 329-1024</a
           >
         </li>
@@ -34,6 +36,7 @@
             name="name"
             placeholder="Sarah"
             pattern="^[a-zA-Z\s\.]{5,64}$"
+            autocomplete="off"
             required
           />
           <p class="invalid-text">Error text</p>
@@ -47,6 +50,7 @@
             name="email"
             placeholder="hello@organic.com"
             pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            autocomplete="off"
             required
           />
           <p class="invalid-text">Error text</p>
@@ -65,6 +69,22 @@
         </div>
       </form>
     </div>
-    <img class="form-img" href="/images/" alt="Group of people smiling" />
+    <picture class="form-img">
+      <img
+        srcset="../images/form.jpg 1x, ../images/form@2x.jpg 2x"
+        alt="Group of people smiling"
+        width="343 "
+      />
+
+      <source
+        media="min-width: 768px"
+        srcset="../images/form-t.jpg 1x, ../images/form-t@2x.jpg 2x"
+      />
+
+      <source
+        media="(min-width: 1440px)"
+        srcset="../images/form-d.jpg 1x, ../images/form-d@2x.jpg 2x"
+      />
+    </picture>
   </div>
 </section>
