@@ -1,12 +1,96 @@
-.class {
+.faq {
+  background-color: var(--japanese-laurel-light);
+  color: var(--white);
 }
 
-@media (min-width: 768px) {
-  .class {
+.faq .container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+/* Desktop styles */
+@media screen and (min-width: 1440px) {
+  .faq .container {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 80px;
+  }
+}
+/* FAQ accordion list */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Desktop styles */
+/* Accordion column */
+@media screen and (min-width: 1440px) {
+  .faq-list {
+    width: 867px;
+  }
+}
+/* FAQ item */
+.faq-item:last-child {
+  border-bottom: 1px solid var(--opacity-white-20);
+}
+/* FAQ question button */
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 20px 0;
+
+  border-top: 1px solid var(--opacity-white-20);
+
+  color: var(--white);
+}
+.faq-question:focus {
+  outline: none;
+}
+
+.faq-question:focus-visible {
+  outline: 2px solid var(--white);
+  outline-offset: 4px;
+}
+/* FAQ answer */
+.faq-answer {
+  display: none;
+  padding-bottom: 24px;
+}
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+/* Tablet styles */
+/* Title column */
+@media screen and (min-width: 768px) {
+  .faq-title-wrapper {
+    max-width: 362px;
   }
 }
 
-@media (min-width: 1440px) {
-  .class {
+/* Desktop styles */
+/* Title column */
+@media screen and (min-width: 1440px) {
+  .faq-title-wrapper {
+    width: 362px;
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
   }
+}
+
+/* FAQ icon */
+.faq-question svg {
+  fill: currentColor;
+  flex-shrink: 0;
+  transition: transform 250ms ease;
+}
+
+.faq-item.active .faq-question svg {
+  transform: rotate(180deg);
 }
