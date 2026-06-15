@@ -58,11 +58,10 @@
 }
 
 .feedbacks__card {
-  border: 1px solid rgba(1, 4, 0, 0.15);
+  border: 1px solid var(--opacity-neutral-darkest-15);
   padding: 32px;
-  width: 343px;
-  min-width: 300px;
-
+  /* width: 343px;
+  min-width: 300px; */
   display: flex;
   flex-direction: column;
 
