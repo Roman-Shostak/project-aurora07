@@ -340,7 +340,7 @@ a.button-secondar {
 }
 /* ------------ Logo styles ------------ */
 .logo {
-  fill: var(--white);
+  fill: currentColor;
   display: block;
 }
 
