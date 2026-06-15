@@ -18,6 +18,15 @@ header {
 }
 .logo-wrapper {
   padding: 6px 0px;
+  color: var(--white);
+  transition: color var(--anim);
+}
+.logo-wrapper:hover,
+.logo-wrapper:focus {
+  color: var(--opacity-white-50);
+}
+.logo-wrapper:active {
+  color: var(--opacity-white-60);
 }
 .navigation {
   margin-left: auto;
